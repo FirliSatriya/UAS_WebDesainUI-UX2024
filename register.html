@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-login.css">
+    <script src="js/script-login.js" defer></script>
+    <title>Daftar</title>
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h2 class="form-title">Daftar Akun</h2>
+        <p class="form-detail">Silahkan lakukan daftar akun terlebih dahulu, selanjutnya anda akan dapat masuk pada website kami.</p>
+        <form action="#">
+            <div class="form-group">
+                <label for="username" class="required">Nama Akun</label>
+                <input type="text" id="username" placeholder="example123" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="required">Alamat Email</label>
+                <input type="email" id="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="required">Kata Sandi</label>
+                <input type="password" id="password" placeholder="Your password" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="required">Konfirmasi Kata Sandi</label>
+                <input type="password" id="password" placeholder="Type your password again" required>
+            </div>
+            <button type="submit" class="btn btn-blue mb-4" onclick="redirectToLoginPage()">Buat Akun</button>
+            <script>
+                function redirectToLoginPage() {
+                    // Menggunakan window.location.href untuk mengarahkan pengguna ke halaman login
+                    window.location.href = "login.html";
+                }
+            </script>
+            
+            <p>Sudah memiliki akun?<a href="login.html" class="form-link"> Masuk</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
